@@ -1,4 +1,5 @@
-#Wevz - Social Media for Genz
+# Wevz - Social Media for Genz
+
 FullStack Social Media App developed using MERN Stack.
 
 ---
