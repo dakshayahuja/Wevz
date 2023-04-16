@@ -23,6 +23,13 @@ const HomePage = () => {
       >
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
           <UserWidget userId={_id} picturePath={picturePath} />
+          <AdvertWidget
+            img={"http://localhost:3001/assets/nike.jpg"}
+            title="Nike"
+            link="nike.com"
+            desc="Empowering athletes everywhere to push past their limits and achieve greatness, one step at a time."
+            mTop="2rem"
+          />
         </Box>
         <Box
           flexBasis={isNonMobileScreens ? "42%" : undefined}
@@ -33,7 +40,12 @@ const HomePage = () => {
         </Box>
         {isNonMobileScreens && (
           <Box flexBasis="26%">
-            <AdvertWidget />
+            <AdvertWidget
+              img={"http://localhost:3001/assets/samsung.png"}
+              title="Samsung"
+              link="samsung.com"
+              desc="From the palm of your hand to the walls of your home, Samsung's products and technologies are revolutionizing the way we live, work, and play. Explore the possibilities today."
+            />
             <Box m="2rem 0" />
             <FriendListWidget userId={_id} />
           </Box>
